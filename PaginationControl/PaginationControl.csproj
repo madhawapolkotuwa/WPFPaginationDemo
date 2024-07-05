@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+  </PropertyGroup>
+
+	<ItemGroup>
+		<!-- Include resource files in the package -->
+		<Content Include="Themes\Generic.xaml" Pack="true" PackagePath="Themes\" />
+		<Content Include="Styles\PaginationStyle.xaml" Pack="true" PackagePath="Styles\" />
+	</ItemGroup>
+
+</Project>
