@@ -86,6 +86,12 @@ public class YourViewModel : INotifyPropertyChanged
         }
     }
 
+    public YourViewModel()
+    {
+        Pages = 10;
+        CurrentPage = 1;
+    }
+
     public event PropertyChangedEventHandler PropertyChanged;
 
     protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
