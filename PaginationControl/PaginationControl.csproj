@@ -4,6 +4,17 @@
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- NuGet Package Metadata -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>PaginationControl.WPF</PackageId>
+		<Version>1.0.3</Version>
+		<RepositoryUrl>https://github.com/madhawapolkotuwa/WPFPaginationDemo.git</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/madhawapolkotuwa/WPFPaginationDemo.git</PackageProjectUrl>
+		<Authors>Madhawa.Polkotuwa</Authors>
+		<Company>MP Coding</Company>
+		<Description>A custom pagination control for WPF applications</Description>
+		<PackageTags>WPF; Custom Control; Pagination;</PackageTags>
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- Include resource files in the package -->
