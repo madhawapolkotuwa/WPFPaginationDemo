@@ -60,7 +60,5 @@
             Pages="{Binding Pages1}"
             Style="{DynamicResource PaginationStyle1}" />
 
-
-
     </StackPanel>
 </Window>

@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PaginationControl\PaginationControl.csproj" />
+    <PackageReference Include="PaginationControl.WPF" Version="1.0.2" />
   </ItemGroup>
 
 </Project>

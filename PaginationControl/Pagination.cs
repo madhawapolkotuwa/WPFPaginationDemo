@@ -212,12 +212,6 @@ namespace PaginationControl
         public ICommand PageBtn4Command { get; private set; }
         public ICommand PageBtn5Command { get; private set; }
 
-        //public Pagination()
-        //{
-        //    NextPageCommand = new CommandBase(_ => ExecuteNextPage());
-        //    PreviousPageCommand = new CommandBase(_ => ExecutePreviousPage());
-        //}
-
         public override void OnApplyTemplate()
         {
             base.OnApplyTemplate();

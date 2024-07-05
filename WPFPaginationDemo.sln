@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainApp", "MainApp\MainApp.csproj", "{02FB9C04-6F2F-44EF-A775-EAB8EB013563}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaginationControl", "PaginationControl\PaginationControl.csproj", "{47DF4056-F370-4B77-98D2-A815962C7D56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaginationControl", "PaginationControl\PaginationControl.csproj", "{47DF4056-F370-4B77-98D2-A815962C7D56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
