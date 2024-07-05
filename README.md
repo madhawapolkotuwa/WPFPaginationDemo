@@ -27,11 +27,11 @@ A custom pagination control for WPF applications.
 To install the `PaginationControl` package via NuGet, use the following command in the NuGet Package Manager Console:
 
 ```
-dotnet add package PaginationControl.WPF --version 1.0.2
+dotnet add package PaginationControl.WPF 
 ```
 or package Manager console
 ```
-NuGet\Install-Package PaginationControl.WPF -Version 1.0.2
+NuGet\Install-Package PaginationControl.WPF 
 ```
 
 ## Manual Installation
