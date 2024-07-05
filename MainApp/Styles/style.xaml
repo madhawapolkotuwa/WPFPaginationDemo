@@ -54,7 +54,6 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-
     <Style x:Key="PaginationStyle1" TargetType="{x:Type PaginationControl:Pagination}">
         <Setter Property="Template">
             <Setter.Value>
@@ -73,7 +72,6 @@
                         <StackPanel Orientation="Horizontal">
                             <Button
                                 x:Name="PART_PreviousPageButton"
-                                Command="{Binding PreviousPageCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                 Style="{StaticResource pagingButton}"
                                 Visibility="{Binding IsPreviousPageBtnVisible, Converter={StaticResource booleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}">
                                 <TextBlock Text="&lt;" />
@@ -84,7 +82,7 @@
                                 Fill="#dee4ec"
                                 Visibility="{Binding IsPreviousPageBtnVisible, Converter={StaticResource booleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
                             <Button
-                                Command="{Binding PageBtn1Command, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                x:Name="PART_PageButton1"
                                 Content="{Binding PageBtn1, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                 Style="{Binding PageBtnStyle1, Converter={StaticResource styleNameConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                 Visibility="{Binding IsPageBtnVisible1, Converter={StaticResource booleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
@@ -96,17 +94,17 @@
                                 Text="..."
                                 Visibility="{Binding IsFirstPaginationVisible, Converter={StaticResource booleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
                             <Button
-                                Command="{Binding PageBtn2Command, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                x:Name="PART_PageButton2"
                                 Content="{Binding PageBtn2, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                 Style="{Binding PageBtnStyle2, Converter={StaticResource styleNameConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                 Visibility="{Binding IsPageBtnVisible2, Converter={StaticResource booleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
                             <Button
-                                Command="{Binding PageBtn3Command, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                x:Name="PART_PageButton3"
                                 Content="{Binding PageBtn3, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                 Style="{Binding PageBtnStyle3, Converter={StaticResource styleNameConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                 Visibility="{Binding IsPageBtnVisible3, Converter={StaticResource booleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
                             <Button
-                                Command="{Binding PageBtn4Command, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                x:Name="PART_PageButton4"
                                 Content="{Binding PageBtn4, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                 Style="{Binding PageBtnStyle4, Converter={StaticResource styleNameConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                 Visibility="{Binding IsPageBtnVisible4, Converter={StaticResource booleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
@@ -118,7 +116,7 @@
                                 Text="..."
                                 Visibility="{Binding IsSecondPaginationVisible, Converter={StaticResource booleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
                             <Button
-                                Command="{Binding PageBtn5Command, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                x:Name="PART_PageButton5"
                                 Content="{Binding PageBtn5, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                 Style="{Binding PageBtnStyle5, Converter={StaticResource styleNameConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                 Visibility="{Binding IsPageBtnVisible5, Converter={StaticResource booleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
@@ -129,7 +127,6 @@
                                 Visibility="{Binding IsNextPageBtnVisible, Converter={StaticResource booleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
                             <Button
                                 x:Name="PART_NextPageButton"
-                                Command="{Binding NextPageCommand, RelativeSource={RelativeSource Mode=TemplatedParent}}"
                                 Style="{StaticResource pagingButton}"
                                 Visibility="{Binding IsNextPageBtnVisible, Converter={StaticResource booleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=TemplatedParent}}">
                                 <TextBlock Text="&gt;" />

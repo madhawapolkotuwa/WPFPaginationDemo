@@ -8,6 +8,11 @@ namespace PaginationControl
 {
     [TemplatePart(Name = "PART_PreviousPageButton", Type = typeof(Button))]
     [TemplatePart(Name = "PART_NextPageButton", Type = typeof(Button))]
+    [TemplatePart(Name = "PART_PageButton1", Type = typeof(Button))]
+    [TemplatePart(Name = "PART_PageButton2", Type = typeof(Button))]
+    [TemplatePart(Name = "PART_PageButton3", Type = typeof(Button))]
+    [TemplatePart(Name = "PART_PageButton4", Type = typeof(Button))]
+    [TemplatePart(Name = "PART_PageButton5", Type = typeof(Button))]
     public class Pagination : Control
     {
         static Pagination()
@@ -204,34 +209,36 @@ namespace PaginationControl
             DependencyProperty.Register("IsPageBtnVisible5",
                 typeof(bool), typeof(Pagination), new PropertyMetadata(false));
 
-        public ICommand NextPageCommand { get; }
-        public ICommand PreviousPageCommand { get; }
-        public ICommand PageBtn1Command { get; private set; }
-        public ICommand PageBtn2Command { get; private set; }
-        public ICommand PageBtn3Command { get; private set; }
-        public ICommand PageBtn4Command { get; private set; }
-        public ICommand PageBtn5Command { get; private set; }
+        private Button? _preiousPageButton;
+        private Button? _nextPageButton;
+        private Button? _pageButton1;
+        private Button? _pageButton2;
+        private Button? _pageButton3;
+        private Button? _pageButton4;
+        private Button? _pageButton5;
 
         public override void OnApplyTemplate()
         {
             base.OnApplyTemplate();
 
             // Find the template parts
-            Button previousPageButton = GetTemplateChild("PART_PreviousPageButton") as Button;
-            Button nextPageButton = GetTemplateChild("PART_NextPageButton") as Button;
+            _preiousPageButton = GetTemplateChild("PART_PreviousPageButton") as Button;
+            _nextPageButton = GetTemplateChild("PART_NextPageButton") as Button;
+            _pageButton1 = GetTemplateChild("PART_PageButton1") as Button;
+            _pageButton2 = GetTemplateChild("PART_PageButton2") as Button;
+            _pageButton3 = GetTemplateChild("PART_PageButton3") as Button;
+            _pageButton4 = GetTemplateChild("PART_PageButton4") as Button;
+            _pageButton5 = GetTemplateChild("PART_PageButton5") as Button;
 
-            // Attach event handlers or commands to the buttons if necessary
-            if (previousPageButton != null)
-            {
-                previousPageButton.Click += (s, e) => ExecutePreviousPage();
-            }
+            if (_preiousPageButton != null) _preiousPageButton.Click += (s, e) => ExecutePreviousPage();
+            if (_nextPageButton != null) _nextPageButton.Click += (s, e) => ExecuteNextPage();
+            if (_pageButton1 != null) _pageButton1.Click += (s, e) => CurrentPage = PageBtn1;
+            if (_pageButton2 != null) _pageButton2.Click += (s, e) => CurrentPage = PageBtn2;
+            if (_pageButton3 != null) _pageButton3.Click += (s, e) => CurrentPage = PageBtn3;
+            if (_pageButton4 != null) _pageButton4.Click += (s, e) => CurrentPage = PageBtn4;
+            if (_pageButton5 != null) _pageButton5.Click += (s, e) => CurrentPage = PageBtn5;
 
-            if (nextPageButton != null)
-            {
-                nextPageButton.Click += (s, e) => ExecuteNextPage();
-            }
         }
-
 
         private void ExecutePreviousPage()
         {
@@ -310,35 +317,6 @@ namespace PaginationControl
                     SetPageButton(2, (page - 1), "pagingButton", true);
                     SetPageButton(3, (page), "pagingButtonActive", true);
                     SetPageButton(4, (page + 1), "pagingButton", true);
-                }
-            }
-            // Update the click events for the buttons
-            UpdateButtonClickEvent(pages, page);
-        }
-
-        private void UpdateButtonClickEvent(int pages, int page)
-        {
-            if (IsPageBtnVisible1)
-            {
-                if (IsPageBtnVisible1)
-                {
-                    PageBtn1Command = new CommandBase(_ => CurrentPage = PageBtn1);
-                }
-                if (IsPageBtnVisible2)
-                {
-                    PageBtn2Command = new CommandBase(_ => CurrentPage = PageBtn2);
-                }
-                if (IsPageBtnVisible3)
-                {
-                    PageBtn3Command = new CommandBase(_ => CurrentPage = PageBtn3);
-                }
-                if (IsPageBtnVisible4)
-                {
-                    PageBtn4Command = new CommandBase(_ => CurrentPage = PageBtn4);
-                }
-                if (IsPageBtnVisible5)
-                {
-                    PageBtn5Command = new CommandBase(_ => CurrentPage = PageBtn5);
                 }
             }
         }

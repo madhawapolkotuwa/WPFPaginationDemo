@@ -28,14 +28,14 @@
             VerticalAlignment="Center"
             CurrentPage="{Binding CurrentPage, Mode=TwoWay}"
             Pages="{Binding Pages}"
-            Style="{DynamicResource PaginationStyle1}" />
+            Style="{DynamicResource PaginationStyle1}"/>
 
         <paginationcontrol:Pagination
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             CurrentPage="{Binding CurrentPage1, Mode=TwoWay}"
             Pages="{Binding Pages1}"
-            Style="{DynamicResource PaginationStyle1}" />
+            Style="{DynamicResource PaginationStyle1}"/>
 
         <TextBlock
             HorizontalAlignment="Center"
@@ -53,12 +53,11 @@
             VerticalAlignment="Center"
             FontSize="50"
             Text="{Binding CurrentPage1}" />
-        <paginationcontrol:Pagination
+        <paginationcontrol:Pagination Style="{DynamicResource PaginationStyle1}"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             CurrentPage="{Binding CurrentPage1, Mode=TwoWay}"
-            Pages="{Binding Pages1}"
-            Style="{DynamicResource PaginationStyle1}" />
+            Pages="{Binding Pages1}" />
 
     </StackPanel>
 </Window>
