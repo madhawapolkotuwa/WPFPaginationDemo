@@ -3,7 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:PaginationControl="clr-namespace:PaginationControl;assembly=PaginationControl"
     xmlns:converters="clr-namespace:PaginationControl.Converters;assembly=PaginationControl">
-
     <Style x:Key="pagingButtonActive" TargetType="Button">
         <Setter Property="Background" Value="#ce404f" />
         <Setter Property="Foreground" Value="#ffffff" />
@@ -26,7 +25,6 @@
             </Setter.Value>
         </Setter>
     </Style>
-
     <Style x:Key="pagingButton" TargetType="{x:Type Button}">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Foreground" Value="#6c7682" />
@@ -137,5 +135,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>

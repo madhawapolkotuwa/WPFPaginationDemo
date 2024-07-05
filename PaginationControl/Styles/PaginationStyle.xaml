@@ -1,5 +1,4 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-
     <Style x:Key="pagingButton" TargetType="{x:Type Button}">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Foreground" Value="#6c7682" />
@@ -28,7 +27,6 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-
     <Style x:Key="pagingButtonActive" TargetType="Button">
         <Setter Property="Background" Value="#ce404f" />
         <Setter Property="Foreground" Value="#ffffff" />
@@ -51,5 +49,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>

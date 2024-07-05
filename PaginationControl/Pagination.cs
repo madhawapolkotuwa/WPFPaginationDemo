@@ -1,8 +1,5 @@
-﻿using PaginationControl.Commands;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Input;
-
 
 namespace PaginationControl
 {
@@ -19,17 +16,14 @@ namespace PaginationControl
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(Pagination), new FrameworkPropertyMetadata(typeof(Pagination)));
         }
-
         public int Pages
         {
             get { return (int)GetValue(PagesProperty); }
             set { SetValue(PagesProperty, value); }
         }
-
         public static readonly DependencyProperty PagesProperty =
             DependencyProperty.Register("Pages", typeof(int), 
                 typeof(Pagination), new PropertyMetadata(0,OnPagesChanged));
-
         private static void OnPagesChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             if(d is Pagination control)
@@ -52,13 +46,11 @@ namespace PaginationControl
                 control.CreatePagination(control.Pages, control.CurrentPage);
             }
         }
-
         public bool IsSecondPaginationVisible
         {
             get { return (bool)GetValue(IsSecondPaginationVisibleProperty); }
             set { SetValue(IsSecondPaginationVisibleProperty, value); }
         }
-
         public static readonly DependencyProperty IsSecondPaginationVisibleProperty =
             DependencyProperty.Register("IsSecondPaginationVisible", 
                 typeof(bool), typeof(Pagination), new PropertyMetadata(false));
@@ -91,7 +83,6 @@ namespace PaginationControl
             get { return (int)GetValue(PageBtn1Property); }
             set { SetValue(PageBtn1Property, value); }
         }
-
         public static readonly DependencyProperty PageBtn1Property =
             DependencyProperty.Register("PageBtn1", 
                 typeof(int), typeof(Pagination), new PropertyMetadata(1));
@@ -132,7 +123,6 @@ namespace PaginationControl
             get { return (string)GetValue(PageBtnStyle1Property); }
             set { SetValue(PageBtnStyle1Property, value); }
         }
-
         public static readonly DependencyProperty PageBtnStyle1Property =
             DependencyProperty.Register("PageBtnStyle1", 
                 typeof(string), typeof(Pagination), new PropertyMetadata("pagingButton"));
@@ -208,7 +198,6 @@ namespace PaginationControl
         public static readonly DependencyProperty IsPageBtnVisible5Property =
             DependencyProperty.Register("IsPageBtnVisible5",
                 typeof(bool), typeof(Pagination), new PropertyMetadata(false));
-
         private Button? _preiousPageButton;
         private Button? _nextPageButton;
         private Button? _pageButton1;
@@ -216,7 +205,6 @@ namespace PaginationControl
         private Button? _pageButton3;
         private Button? _pageButton4;
         private Button? _pageButton5;
-
         public override void OnApplyTemplate()
         {
             base.OnApplyTemplate();
@@ -239,7 +227,6 @@ namespace PaginationControl
             if (_pageButton5 != null) _pageButton5.Click += (s, e) => CurrentPage = PageBtn5;
 
         }
-
         private void ExecutePreviousPage()
         {
             if (CurrentPage > 1)
@@ -247,7 +234,6 @@ namespace PaginationControl
                 CurrentPage--;
             }
         }
-
         private void ExecuteNextPage()
         {
             if (Pages > CurrentPage)
@@ -352,7 +338,5 @@ namespace PaginationControl
                     break;
             }
         }
-
-
     }
 }

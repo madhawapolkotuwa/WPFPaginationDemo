@@ -14,29 +14,24 @@
     <Window.DataContext>
         <vm:MainViewModel />
     </Window.DataContext>
-
     <StackPanel Orientation="Vertical">
-
         <TextBlock
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             FontSize="50"
             Text="{Binding CurrentPage}" />
-
         <paginationcontrol:Pagination
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             CurrentPage="{Binding CurrentPage, Mode=TwoWay}"
             Pages="{Binding Pages}"
             Style="{DynamicResource PaginationStyle1}"/>
-
         <paginationcontrol:Pagination
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             CurrentPage="{Binding CurrentPage1, Mode=TwoWay}"
             Pages="{Binding Pages1}"
             Style="{DynamicResource PaginationStyle1}"/>
-
         <TextBlock
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
@@ -47,7 +42,6 @@
             VerticalAlignment="Center"
             FontSize="25"
             Text="MP Coding" />
-
         <TextBlock
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
@@ -58,6 +52,5 @@
             VerticalAlignment="Center"
             CurrentPage="{Binding CurrentPage1, Mode=TwoWay}"
             Pages="{Binding Pages1}" />
-
     </StackPanel>
 </Window>

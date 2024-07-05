@@ -59,7 +59,6 @@ namespace MainApp.ViewModels
                 OnPropertyChanged(nameof(CurrentPage1));
             }
         }
-
         public MainViewModel()
         {
             Pages = 5;
@@ -68,7 +67,6 @@ namespace MainApp.ViewModels
             Pages1 = 25;
             CurrentPage1 = 1;
         }
-
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {
