@@ -1,4 +1,4 @@
-# WPFPaginationDemo
+# WPF.Pagination
 
 A custom pagination control for WPF applications.
 
