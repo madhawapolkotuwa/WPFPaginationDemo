@@ -44,7 +44,7 @@ NuGet\Install-Package PaginationControl.WPF
 
 1. Add the XML namespace to your XAML file:
 ```xml
-    xmlns:paginationcontrol="clr-namespace:PaginationControl;assembly=PaginationControl"
+    xmlns:paginationcontrol="http://schemas.mpcoding.com/mpcoding/wpf/pagination"
 ```
 2. Add the Pagination control to your XAML:
 ```xml
@@ -105,13 +105,13 @@ NuGet\Install-Package PaginationControl.WPF
         </Trigger>
     </Style.Triggers>
 </Style>
-<Style x:Key="PaginationStyle1" TargetType="{x:Type PaginationControl:Pagination}">
+<Style x:Key="PaginationStyle1" TargetType="{x:Type paginationcontrol:Pagination}">
     <Setter Property="Template">
         <Setter.Value>
-            <ControlTemplate TargetType="{x:Type PaginationControl:Pagination}">
+            <ControlTemplate TargetType="{x:Type paginationcontrol:Pagination}">
                 <ControlTemplate.Resources>
                     <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter" />
-                    <converters:StyleNameConverter x:Key="styleNameConverter" />
+                    <paginationcontrol:StyleNameConverter x:Key="styleNameConverter" />
                 </ControlTemplate.Resources>
                 <Border
                     Margin="0,10,10,10"

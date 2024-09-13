@@ -5,7 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:MainApp"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:paginationcontrol="clr-namespace:PaginationControl;assembly=PaginationControl"
+    xmlns:paginationcontrol="http://schemas.mpcoding.com/mpcoding/wpf/pagination"
     xmlns:vm="clr-namespace:MainApp.ViewModels"
     Title="Pagination Demo Mp Coding"
     Width="800"

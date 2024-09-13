@@ -1,24 +1,41 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net6.0-windows</TargetFramework>
+		<TargetFramework>net6.0-windows7.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- NuGet Package Metadata -->
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageId>PaginationControl.WPF</PackageId>
-		<Version>1.0.3</Version>
+		<PackageId>MpCoding.PaginationControl.WPF</PackageId>
+		<Version>1.0.4</Version>
 		<RepositoryUrl>https://github.com/madhawapolkotuwa/WPFPaginationDemo.git</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/madhawapolkotuwa/WPFPaginationDemo.git</PackageProjectUrl>
 		<Authors>Madhawa.Polkotuwa</Authors>
 		<Company>MP Coding</Company>
-		<Description>A custom pagination control for WPF applications</Description>
+		<Description>A custom pagination control for WPF applications.
+(customizable)</Description>
 		<PackageTags>WPF; Custom Control; Pagination;</PackageTags>
+		<Title>wpf pagination customizable</Title>
+		<Copyright>MpCoding © 2024</Copyright>
+		<PackageIcon>MpCodingDP.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- Include resource files in the package -->
 		<Content Include="Themes\Generic.xaml" Pack="true" PackagePath="Themes\" />
 		<Content Include="Styles\PaginationStyle.xaml" Pack="true" PackagePath="Styles\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Update="MpCodingDP.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 </Project>

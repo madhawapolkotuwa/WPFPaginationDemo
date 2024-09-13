@@ -2,8 +2,6 @@
     x:Class="MainApp.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:PaginationControl="clr-namespace:PaginationControl;assembly=PaginationControl"
-    xmlns:converters="clr-namespace:PaginationControl.Converters;assembly=PaginationControl"
     xmlns:local="clr-namespace:MainApp"
     StartupUri="MainWindow.xaml">
     <Application.Resources>
