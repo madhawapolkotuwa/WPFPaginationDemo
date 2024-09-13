@@ -178,4 +178,8 @@ public class YourViewModel : INotifyPropertyChanged
     }
 }
 ```
+## Video Tutorial
+[https://www.youtube.com/watch?v=q6gc97CD5oA](https://www.youtube.com/watch?v=q6gc97CD5oA)
+
+[![Video Tutorial](https://img.youtube.com/vi/q6gc97CD5oA/0.jpg)](https://www.youtube.com/watch?v=q6gc97CD5oA)
 
