@@ -19,13 +19,6 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#ce404f" />
-                <Setter Property="Foreground" Value="#ffffff" />
-            </Trigger>
-        </Style.Triggers>
     </Style>
     <Style x:Key="pagingButtonActive" TargetType="Button">
         <Setter Property="Background" Value="#ce404f" />

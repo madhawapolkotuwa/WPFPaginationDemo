@@ -219,6 +219,7 @@ namespace PaginationControl
             _pageButton5 = GetTemplateChild("PART_PageButton5") as Button;
 
             if (_preiousPageButton != null) _preiousPageButton.Click += (s, e) => ExecutePreviousPage();
+            if (_preiousPageButton != null) _preiousPageButton.Click += (s, e) => ExecutePreviousPage();
             if (_nextPageButton != null) _nextPageButton.Click += (s, e) => ExecuteNextPage();
             if (_pageButton1 != null) _pageButton1.Click += (s, e) => CurrentPage = PageBtn1;
             if (_pageButton2 != null) _pageButton2.Click += (s, e) => CurrentPage = PageBtn2;
