@@ -98,6 +98,7 @@ NuGet\Install-Package PaginationControl.WPF
             </ControlTemplate>
         </Setter.Value>
     </Setter>
+    <!-- If touch screen do not trigger the MouseOver Functions -->
     <Style.Triggers>
         <Trigger Property="IsMouseOver" Value="True">
             <Setter Property="Background" Value="#ce404f" />

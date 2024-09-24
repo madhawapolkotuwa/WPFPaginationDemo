@@ -8,7 +8,7 @@
 		<!-- NuGet Package Metadata -->
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>PaginationControl.WPF</PackageId>
-		<Version>1.0.4</Version>
+		<Version>1.0.5</Version>
 		<RepositoryUrl>https://github.com/madhawapolkotuwa/WPFPaginationDemo.git</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/madhawapolkotuwa/WPFPaginationDemo.git</PackageProjectUrl>
 		<Authors>Madhawa.Polkotuwa</Authors>
@@ -20,6 +20,7 @@
 		<Copyright>MpCoding © 2024</Copyright>
 		<PackageIcon>MpCodingDP.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReleaseNotes>Touch Screen Update</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- Include resource files in the package -->
